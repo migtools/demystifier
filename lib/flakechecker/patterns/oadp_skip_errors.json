@@ -1,0 +1,62 @@
+[
+    {
+        "issue": "received EOF, stopping recv loop",
+        "description": "received EOF, stopping recv loop",
+        "string_search_pattern": "received EOF, stopping recv loop",
+        "skip_retry": true
+    },
+    {
+        "issue": "Checking for AWS specific error information",
+        "description": "Checking for AWS specific error information",
+        "string_search_pattern": "Checking for AWS specific error information",
+        "skip_retry": true
+    },
+    {
+        "issue": "awserr.Error contents",
+        "description": "awserr.Error contents",
+        "string_search_pattern": "awserr.Error contents",
+        "skip_retry": true
+    },
+    {
+        "issue": "Error creating parent directories for blob-info-cache-v1.boltdb",
+        "description": "Error creating parent directories for blob-info-cache-v1.boltdb",
+        "string_search_pattern": "Error creating parent directories for blob-info-cache-v1.boltdb",
+        "skip_retry": true
+    },
+    {
+        "issue": "blob unknown",
+        "description": "blob unknown",
+        "string_search_pattern": "blob unknown",
+        "skip_retry": true
+    },
+    {
+        "issue": "num errors=0",
+        "description": "num errors=0",
+        "string_search_pattern": "num errors=0",
+        "skip_retry": true
+    },
+    {
+        "issue": "level=debug",
+        "description": "debug logs may contain the text error about recoverable errors so ignore them",
+        "string_search_pattern": "level=debug",
+        "skip_retry": true
+    },
+    {
+        "issue": "Unable to retrieve in-cluster version",
+        "description": "Unable to retrieve in-cluster version",
+        "string_search_pattern": "Unable to retrieve in-cluster version",
+        "skip_retry": true
+    },
+    {
+        "issue": "restore warning",
+        "description": "restore warning",
+        "string_search_pattern": "restore warning",
+        "skip_retry": true
+    },
+    {
+        "issue": "Ignore managed fields errors per https://github.com/vmware-tanzu/velero/pull/6110 and avoid e2e failure.",
+        "description": "https://prow.ci.openshift.org/view/gs/origin-ci-test/pr-logs/pull/openshift_oadp-operator/1126/pull-ci-openshift-oadp-operator-master-4.10-operator-e2e-aws/1690109468546699264#1:build-log.txt%3A686",
+        "string_search_pattern": "level=error msg=\"error patch for managed fields",
+        "skip_retry": true
+    }
+]

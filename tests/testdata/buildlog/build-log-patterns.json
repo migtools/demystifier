@@ -11,8 +11,8 @@
     },
     {
         "issue": "https://github.com/example/repo/issues/4",
-        "description": "Example flake pattern 4",
-        "string_search_pattern": "Backup and restore tests Backup and restore applications [It] MySQL application two Vol CSI",
+        "description": "Example flake pattern with quotes",
+        "string_search_pattern": "\"entrypoint\",\"error\":\"wrapped process failed",
         "skip_retry": false
     }
 ]

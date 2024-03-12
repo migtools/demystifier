@@ -49,7 +49,7 @@ func TestCheckIfFlakeOccurred(t *testing.T) {
 
     expectedPatterns := []string{
 		"Failed to check and update snapshot content: failed to remove VolumeSnapshotBeingCreated annotation on the content snapcontent-",
-		"Backup and restore tests Backup and restore applications [It] MySQL application two Vol CSI",
+		"\"entrypoint\",\"error\":\"wrapped process failed",
 	}
     for _, pattern := range flakePatterns {
         if !containsString(expectedPatterns, pattern.StringSearchPattern) {
