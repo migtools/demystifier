@@ -1,0 +1,8 @@
+[
+    {
+        "issue": "https://github.com/example/repo/issues/4",
+        "description": "Example flake pattern 4",
+        "string_search_pattern": "pattern 4",
+        "skip_retry": false
+    }
+]

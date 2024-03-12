@@ -24,7 +24,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/migtools/demystifier/internal/utils"
+	"github.com/migtools/demystifier/lib/utils"
 	log "github.com/sirupsen/logrus"
 )
 

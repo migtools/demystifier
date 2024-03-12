@@ -1,0 +1,17 @@
+[
+    {
+        "issue": "https://github.com/example/repo/issues/1",
+        "description": "Example flake pattern 1",
+        "string_search_pattern": "pattern 1"
+    },
+    {
+        "issue": "https://github.com/example/repo/issues/2",
+        "description": "Example flake pattern 2",
+        "string_search_pattern": "pattern 2"
+    },
+    {
+        "issue": "https://github.com/example/repo/issues/3",
+        "description": "Example flake pattern 3",
+        "string_search_pattern": "pattern 3"
+    }
+]

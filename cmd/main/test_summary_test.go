@@ -23,7 +23,7 @@ import (
 	"testing"
 )
 
-const logFile = "../../tests/testdata/build-log.txt"
+const logFile = "../../tests/testdata/buildlog/build-log.txt"
 
 func TestPrintTestSummary(t *testing.T) {
 	type args struct {

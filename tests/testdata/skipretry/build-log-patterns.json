@@ -1,0 +1,20 @@
+[
+    {
+        "issue": "https://github.com/kubernetes-csi/external-snapshotter/pull/876",
+        "description": "Race condition in the VolumeSnapshotBeingCreated",
+        "string_search_pattern": "Failed to check and update snapshot content: failed to remove VolumeSnapshotBeingCreated annotation on the content snapcontent-",
+        "skip_retry": false
+    },
+    {
+        "issue": "https://github.com/vmware-tanzu/velero/issues/5856",
+        "description": "Transient S3 bucket errors and limits",
+        "string_search_pattern": "Error copying image: writing blob: uploading layer chunked: received unexpected HTTP status: 500 Internal Server Error",
+        "skip_retry": false
+    },
+    {
+        "issue": "https://github.com/example/repo/issues/4",
+        "description": "Example flake pattern 4",
+        "string_search_pattern": "Backup and restore tests Backup and restore applications [It] MySQL application two Vol CSI",
+        "skip_retry": false
+    }
+]
