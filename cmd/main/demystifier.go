@@ -24,6 +24,7 @@ import (
 	"sort"
 	"time"
 
+	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/migtools/demystifier/lib/utils"
 	log "github.com/sirupsen/logrus"
 )
@@ -136,14 +137,15 @@ func PrintTestSummary(testData *utils.TestRunData) {
 
 	// Print the summary table
 	fmt.Println("Test Summary Table:")
-	headerStr := "---------------------------------------------------------------------------------------------------"
-	fmt.Println(headerStr)
-	fmt.Printf("| %-40s | %-15s | %-11s | %-20s |\n", "Test Name", "Num Attempts", "Num Failed", "Average Run Time")
-	fmt.Println(headerStr)
+	t := table.NewWriter()
+	t.SetOutputMirror(os.Stdout)
+	t.AppendHeader(table.Row{"Test Name", "Num Attempts", "Num Failed", "Average Run Time"})
 	for _, summary := range summaries {
-		fmt.Printf("| %-40s | %-15d | %-11d | %-20s |\n", summary.Name, summary.NumAttempts, summary.NumFailed, summary.AverageRunTime)
+		t.AppendRows([]table.Row{
+			{summary.Name, summary.NumAttempts, summary.NumFailed, summary.AverageRunTime},
+		})
 	}
-	fmt.Println(headerStr)
+	t.Render()
 }
 
 func main() {
